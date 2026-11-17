@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: rgb(38, 38, 249);
+        }
+        p,h1{
+            color: white;
+            font-family:dm sans;
+        }
+        header{
+            padding: 0;
+            margin: 10px 10px 10px 10px;
+        }
+        .content{
+            border:solid 2px rgb(44, 91, 248);
+        }
+        .left{
+            padding: 80px 80px 80px 40px;
+            border-right: solid 2px  rgb(44, 91, 248);
+        }
+        .left h1{
+            font-family:google sans;
+            font-size:45px;
+            text-align:left;
+            width: 65% ;
+        }
+        .left p{
+            line-height:1.6;
+            width: 65%;
+        }
+        h2{
+            margin:13em 0 0 0;
+            font-family: google sans;
+            font-size: small;
+            color: white;
+            font-weight: normal;
+        }
+        .right div{
+            border: solid 1px  rgb(44, 91, 248);
+            padding:15px 15px 15px 15px;
+            /* min-height: 260px; */
+            position: relative;
+        }
+        .description{
+            font-size: small;
+            color: rgb(175, 194, 244);
+        }
+
+        .millions{
+            display: inline-block;
+            margin: 0;
+            padding: 10px 10px 10px 10px;
+            font-family: google sans;
+            font-size:1.7em;
+            position: absolute;
+            left: 70%;
+        }
+        .icon{
+            display: inline-block;
+            margin: 0;
+            padding: 10px 10px 10px 10px;
+            font-family: google sans;
+            font-size:1.7em;           
+        }
+    </style>
+    <header>
+        <p>Bridge collective</p>
+       <i class="fa-solid fa-bars"></i>
+    </header>
+    <div class="content" style="
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     ">
+        <div class="left">
+            <h1>
+                A classroom for every child.
+            </h1>
+            <p class="description">
+                We fund the schools, train the teachers, and
+                measure what works - so every child we reach
+                today becomes a graduate tomorrow.
+            </p>
+        </div>
+        <div class="right" style="
+        display: grid;
+        grid-template-columns:repeat(2, 1fr);
+        aspect-ratio: 1/1;
+        ">
+            <div>
+                <p class="millions">2.4M</p>
+                <p class="icon">P</p>
+                <h2>
+                    Students reached
+                </h2>
+                <p class="description">
+                     Across 31 countries since 2011.
+                </p>
+            </div>
+            <div>
+                <p class="millions">1,829</p>
+                <p class="icon">P</p>
+                <h2>
+                    Schools partnered 
+                </h2>
+                <p class="description">
+                    In 14 countries, from Kenya to Guatemala.
+                </p>
+            </div>
+            <div>
+                <p class="millions">38K</p>
+                <p class="icon">P</p>
+                <h2>
+                    Teachers trained
+                </h2>
+                <p class="description">
+                   Equipped with modern tools and methodology.
+                </p>
+            </div>
+            <div>
+                <p class="millions">3.1x</p>
+                <p class="icon">P</p>
+                <h2>
+                    Graduation lift
+                </h2>
+                <p class="description">
+                   Partner schools outperform national averages 3x.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
