@@ -6,16 +6,109 @@
     <title>Document</title>
 </head>
 <body>
+    <style>
+        body{
+        margin: 0;
+        padding: 1em 1em 1em 1em;
+        background-color: black;
+        display: flex;
+        justify-content: center; /* Centre horizontalement */
+        align-items: center;     /* Centre verticalement */
+        }
+        .content{
+            margin: 0;
+            padding: 2em 2em 2em 2em;
+            background-color: rgb(21, 20, 20);
+            max-height: 844px;
+            width:300px;
+            border: 1px solid rgb(168, 234, 4);
+            border-radius:20px;
+            display:grid;
+            justify-content: center;
+            align-items: center;
+        }
+        img{
+            width: 5em;
+            height: 5em;
+            border-radius: 5em;
+            position: relative;
+            transform: translate(-50%, -50%);
+        }
+        p{
+            color: aliceblue;
+            font-family: google sans;
+        }
+        .name{
+            margin:0;
+            font-size:1.5em;
+            font-weight: 500;
+            text-align: center;
+        }
+        .localisation{
+            margin:0 0 1em 0;
+            font-family:google sans,Georgia, 'Times New Roman', Times, serif;
+            color: rgb(168, 234, 4);
+            text-align: center;
+        }
+        .bio{
+            margin:10px 1px 10px 0;
+            font-family:google sans,Georgia, 'Times New Roman', Times, serif;
+            font-size: small;
+            color: rgb(255, 255, 255);
+            text-align: center;
+        }
+        .social-link{
+            font-family:google sans, 'Courier New', Courier, monospace;
+            font-size: medium;
+            font-weight: 500;
+            text-decoration: none;
+            color:white
+        }
+        .social-link:hover{
+            color: rgb(0, 0, 0);
+            text-decoration: underline;
+            transition: 0.3s;
+        }
+        button{
+            margin: 10px 0 10px 0;
+            width: 100%;
+            height: 3em;
+            border-radius: 5px;
+            background-color: rgb(168, 234, 4);
+            border: none;
+            cursor: pointer;
+        }
+    </style>
     <div class="content">
-        <img src="./profil pictur.jpg" alt="profile" width="100%" height="100%">
-        <p class="name">John Doe</p>
-        <p class="localisation">New York, USA</p>
+        <img src="./profil.jpg" alt="profile" width="100%" height="100%">
+       <p class="name">Jessica Randal</p>
+        <p class="localisation">London, United Kingdom</p>
         <p class="bio">Software Engineer</p>
-        <a class="social-link" href="https://www.linkedin.com/in/johndoe" target="_blank">LinkedIn</a>
-        <a class="social-link" href="https://www.github.com/in/gadielbumi" target="_blank">GitHub</a>
-        <a class="social-link" href="https://www.twitter.com/johndoe" target="_blank">Twitter</a>
-        <a class="social-link" href="https://www.instagram.com/johndoe" target="_blank">Instagram</a>
-        <a class="social-link" href="https://www.facebook.com/johndoe" target="_blank">Facebook</a>
+         <button>
+            <a class="social-link" href="https://www.linkedin.com/in/johndoe" target="_blank">
+                LinkedIn
+            </a>
+         </button>
+        <button>
+            <a class="social-link" href="https://www.github.com/in/gadielbumi" target="_blank">
+                GitHub
+            </a>
+        </button>
+        <button>
+            <a class="social-link" href="https://www.twitter.com/johndoe" target="_blank">
+                Twitter
+            </a>
+        </button>
+        <button>
+            <a class="social-link" href="https://www.instagram.com/johndoe" target="_blank">
+                Instagram
+            </a>
+        </button>
+        <button>
+            <a class="social-link" href="https://www.facebook.com/johndoe" target="_blank">
+                Facebook
+            </a>
+        </button>
 
     </div>
 </body>
